@@ -1,6 +1,6 @@
 # Query Translator
 
-[![Build Status](https://img.shields.io/travis/netgen/query-translator.svg?style=flat-square)](https://travis-ci.org/netgen/query-translator)
+[![Build Status](https://img.shields.io/github/workflow/status/netgen/query-translator/Tests?style=flat-square)](https://github.com/netgen/query-translator/actions?query=workflow%3ATests)
 [![Code Coverage](https://img.shields.io/codecov/c/github/netgen/query-translator.svg?style=flat-square)](https://codecov.io/gh/netgen/query-translator)
 [![Downloads](https://img.shields.io/packagist/dt/netgen/query-translator.svg?style=flat-square)](https://packagist.org/packages/netgen/query-translator)
 [![Latest stable](https://img.shields.io/packagist/v/netgen/query-translator.svg?style=flat-square)](https://packagist.org/packages/netgen/query-translator)
@@ -63,7 +63,11 @@ points to customize various parts of the translator to fit your needs. See
 
 ## Run the demo
 
-1. Clone the repository and position into it
-2. Generate autoloader using composer `composer dump-autoload -o`
-3. Start the web server with demo document root `php -S localhost:8005 -t demo`
-4. Open [http://localhost:8005](http://localhost:8005) in your browser ![Query Translator demo](demo/animation.gif)
+Demo is available as a separate repository at [netgen/query-translator-demo](https://github.com/netgen/query-translator-demo).
+
+Steps for running the demo:
+
+1. Create the demo project using composer `composer create-project netgen/query-translator-demo`
+2. Position into the demo project directory `cd query-translator-demo`
+3. Start the web server with `src` as the document root `php -S localhost:8005 -t src`
+4. Open [http://localhost:8005](http://localhost:8005) in your browser ![Query Translator demo](https://raw.githubusercontent.com/netgen/query-translator-demo/master/src/animation.gif)
